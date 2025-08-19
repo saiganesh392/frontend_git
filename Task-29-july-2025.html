@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGSRTC Bus Pass Application</title>
+</head>
+<body>
+    <center>
+        <img src="./Images/tgsrtc.png" alt="tgsrtc logo" width="800">
+    </center>
+     <fieldset >
+            <legend><b>Applicant Details</b></legend>
+            <table width="50%">
+    <form action="./submit.html" method="get" enctype="text/plain">
+     <tr><td><label for="name">Name</label> <sup style="color:darkred" >*</sup>
+        <input type="text" id="name" name="name" required></td>
+        <td>
+        <label for="fatherName" >Father's/Guardian's Name</label><sup style="color:darkred">*</sup>
+        <input type="text" name="fatherName" id="fatherName">
+
+        </td></tr>
+
+        <tr>
+            <td>
+                <label for="dob">Date of Birth</label><sup style="color:darkred">*</sup>
+                <input type="date" name="dob" id="dob">
+    </td>
+    <td>
+                <label for="gender">Gender</label><sup style="color:darkred">*</sup>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female" >Female</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="ageason">Age as on :</label>
+                <input type="date" name="ageason" id="ageason">
+            </td>
+            <td>
+                <label for="aadhar">Aadhaar No: </label>
+                <input type="text" name="aadhar" id="aadhar">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="wsp">Whatsapp No</label><sup style="color:darkred">*</sup>
+                <input type="tel" name="wsp" id="wsp">
+            <td>
+                <label for="email">E-mail Id</label><sup style="color:darkred">*</sup>
+                <input type="email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="photo">Photo </label><sup style="color:darkred">*</sup>
+                <input type="file" id="photo" >
+            </td>
+        </tr></table></fieldset>
+
+
+
+       
+        
+            <fieldset>
+                <legend>
+                    <b>Resedential Address Details</b>
+                </legend> <table width="40%">
+                <tr>
+                    <td>
+                        <label for="address">Applicant's Address</label><sup style="color:darkred">*</sup>
+                        <textarea name="address" id="address" rows="6" cols="25"></textarea>
+                    </td>
+
+                    <td>
+                        <label for="district">District</label><sup style="color:darkred">*</sup>
+                        <select name="district" id="district">
+                            <option value="Hyderabad">Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mandal">Mandal</label><sup style="color:darkres">*</sup>
+                        <select name="mandal" id="mandal">
+                            <option value="Hyderabad">Hyderabad</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="Village">Village</label><sup style="color:darkred">*</sup>
+                    <select name="village" id="village">
+                        <option value="Hyderabad">Hyderabad</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pincode">Pincode</label><sup style="color:darkred">*</sup>
+                        <input type="text" name="pincode" id="pincode">
+                    </td>
+                </tr>
+
+            
+            
+            </table>
+
+
+
+
+
+            </fieldset>
+        
+<fieldset>
+    <legend><b>Pass type Details</b></legend>
+    <table >
+        <tr>
+            <td>
+                <label for="city">City </label><sup style="color:darkred">*</sup>
+                <select name="city" id="city">
+                    <option value="Hyderabad">Hyderabad</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="passtype">Pass Type </label><sup style="color:darkred">*</sup>
+                <select name="passtype" id="passtype">
+                    <option value="---Select---">---Select---</option>
+                    <option value="GREATER PASS">GREATER PASS</option>
+                    <option value="GENERAL ORDINARY ROUTE PASS">GENERAL ORDINARY ROUTE PASS</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>
+        <b>Mode of Payment & Pass Collection </b>
+    </legend>
+    <table>
+        <tr>
+            <td>
+                <label for="payment">Payment Mode </label><sup style="color:darkred">*</sup>
+                <select name="payment" id="payment">
+                    <option value="Select Payment Mode">Select Payment Mode</option>
+                    <option value="Payment at Counter">Payment at Counter</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="passdelivery">Pass Delivery Mode </label><sup style="color:darkred">*</sup>
+                <select name="passdelivery" id="passdelivery">
+                    <option value="Select Pass Delivery Mode">Select Pass Delivery Mode</option>
+                    <option value="At Counter">At Counter</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="collectioncenter">Center at which you want to Collect Pass </label><sup style="color:darkred">*</sup>
+                <select name="collectioncenter" id="collectioncenter">
+                    <option value="---Select---">---Select---</option>
+                    <option value="RTC KPHB -- HYD[29-07-2025]">RTC KPHB -- HYD[29-07-2025]</option>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<center>
+    <img src="./Images/captcha.png" alt="captcha" name="captcha" id="captcha" width="250"><br><br>
+    <input type="text" name="captcha" id="captcha"><br><br>
+    <input type="submit">
+</center>
+
+
+
+    </form></table>
+</body>
+</html>
